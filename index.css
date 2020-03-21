@@ -1,0 +1,103 @@
+*{margin: 3px;
+box-sizing: border-box;
+padding:0;
+font-size: 1em;
+background-color:rgb(241, 236, 236);
+color: rgb(0, 0, 0);}
+
+
+/*header part*/
+.header-name{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+.header-name div{
+    position: relative;
+    background-color: white;
+    padding: 10px;
+}
+.header-name p {
+    font-size: 4rem;
+    background-color: white;
+    color: red;
+}
+.header-name p::before{
+    content: "A movie blog for the latest movie reviews, trailers and many more...";
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    top: 75px;
+
+}
+.header-name input{
+    align-self: center;
+    padding: 10px;
+    background-color: rgb(199, 174, 174);
+    font-size: 1.2rem;
+}
+/*navigation menu*/
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(49, 45, 45);
+}
+nav a{
+    display: block;
+    color: rgb(187, 65, 65);
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(49, 45, 45);
+    font-size: 1.5rem;
+}
+nav a:hover{
+    background-color: rebeccapurple;
+}
+.heading-image{
+    height: 300px;
+    width: 100%;
+}
+.heading-image img{
+    height: inherit;
+    width: inherit;
+}
+
+
+/*section*/
+.first-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-section .article1{
+    flex:1;
+    box-shadow: 4px 4px 10px black;
+}
+.first-section .article2{
+    flex: 1;
+    box-shadow: 4px 4px 10px rgb(3, 3, 3)
+}
+.first-section aside div{
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+
+}
+.first-section aside h2{
+    font-size: 2rem;
+}
+
+.article1 h1{
+    background-color: purple;
+    font-size: 3rem;
+}
+ul{
+    list-style: none;
+}
+.article2 h2{
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(24, 94, 151);
+}
+

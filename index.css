@@ -1,4 +1,4 @@
-*{margin: 3px;
+*{margin: 0px;
 box-sizing: border-box;
 padding:0;
 font-size: 1em;
@@ -12,24 +12,24 @@ color: rgb(0, 0, 0);}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgb(49, 45, 45);
 }
 .header-name div{
-    position: relative;
-    background-color: white;
+    background-color: rgb(49, 45, 45);
     padding: 10px;
 }
 .header-name p {
     font-size: 4rem;
-    background-color: white;
+    background-color: rgb(49, 45, 45);
     color: red;
+    position: relative;
 }
 .header-name p::before{
     content: "A movie blog for the latest movie reviews, trailers and many more...";
     font-size: 1rem;
-    color: black;
+    color: rgb(129, 110, 110);
     position: absolute;
-    top: 75px;
+    top: 60px;
 
 }
 .header-name input{
@@ -55,7 +55,7 @@ nav a{
     font-size: 1.5rem;
 }
 nav a:hover{
-    background-color: rebeccapurple;
+    background-color: rgb(36, 29, 41);
 }
 .heading-image{
     height: 300px;
@@ -73,12 +73,15 @@ nav a:hover{
     flex-wrap: wrap;
 }
 .first-section .article1{
-    flex:1;
+    flex:40%;
     box-shadow: 4px 4px 10px black;
 }
 .first-section .article2{
-    flex: 1;
+    flex: 40%;
     box-shadow: 4px 4px 10px rgb(3, 3, 3)
+}
+.first-section aside{
+    flex: 15%;
 }
 .first-section aside div{
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
@@ -89,8 +92,8 @@ nav a:hover{
 }
 
 .article1 h1{
-    background-color: purple;
-    font-size: 3rem;
+    background-color: rgb(24, 94, 151);
+    font-size: 2rem;
 }
 ul{
     list-style: none;
@@ -100,4 +103,52 @@ ul{
     text-align: center;
     background-color: rgb(24, 94, 151);
 }
+footer{
+    height: 100px;
+    background-color: rgb(104, 103, 99);
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+footer > p{
+    top:40px;
+    left: 600px;
+    background-color: rgb(104, 103, 99);
+    align-self: center;
 
+}
+.aside-div-2{
+    margin-top: 50px;
+}
+.aside-div-2 img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:480px){
+.header-name p{
+    font-size: 2rem;
+}
+.first-section .article1,
+.first-section .article2{
+    flex: 100%;
+    
+}
+
+
+.heading-image{
+    display: none;
+}
+.header-name p::before{
+    display: none;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: rgb(49, 45, 45);
+
+
+}
